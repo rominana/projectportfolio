@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
 .header {
   margin: auto;
   padding: 20px 0;
@@ -62,6 +68,10 @@ body {
   align-items: flex-start;
 }
 
+p {
+    align-self: baseline;
+}
+
 /* FOOTER */
 .network {
   display: flex;
@@ -82,6 +92,15 @@ body {
   display: flex;
   margin: 10px;
 }
+
+.social-media ul {
+    flex-direction: column;
+}
+
+.social-media li {
+    flex-direction: row;
+}
+
 
 .social-media:hover {
   color: #172b4d;
