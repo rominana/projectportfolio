@@ -8,9 +8,8 @@
 }
 
 ul li {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  box-sizing: unset;
 }
 
 .header {
@@ -69,7 +68,7 @@ body {
 }
 
 p {
-    align-self: baseline;
+  align-self: baseline;
 }
 
 /* FOOTER */
@@ -94,13 +93,13 @@ p {
 }
 
 .social-media ul {
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
 .social-media li {
-    flex-direction: row;
+  font-size: 20px;
 }
-
 
 .social-media:hover {
   color: #172b4d;
