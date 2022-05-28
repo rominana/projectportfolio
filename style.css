@@ -120,6 +120,12 @@ body {
   width: 177px;
 }
 
+ul li {
+  list-style: none;
+  box-sizing: unset;
+  display: inline;
+}
+
 /* END OF ID SECTION */
 @media only screen and (min-width: 600px) {
   .menu {
@@ -154,6 +160,7 @@ body {
   border-radius: 16px;
   max-width: 327px;
   padding: 15px;
+  margin-bottom: 50px;
 }
 
 .card-picture {
@@ -170,7 +177,7 @@ body {
 .card-content .title {
   font-family: 'poppins', sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   max-width: 205px;
   color: #172b4d;
 }
@@ -309,6 +316,12 @@ summary {
   padding: 1em;
 }
 
+summary .summary-titles {
+  font-size: 20px;
+  font-weight: 600;
+  color: #172b4d;
+}
+
 summary::-webkit-details-marker {
   display: none;
 }
@@ -339,7 +352,6 @@ summary:hover .summary-chevron-up svg {
   cursor: default;
   padding: 1em;
   font-weight: 300;
-  line-height: 1.5;
 }
 
 .langg {
