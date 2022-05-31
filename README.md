@@ -7,7 +7,7 @@
 
 - Html
 - Css
-- Javascript
+- Formspree
 
 #### Prerequisites
 - Setup Git and Github
