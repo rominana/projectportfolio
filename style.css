@@ -228,6 +228,11 @@ ul li {
   gap: 15px;
 }
 
+/* .pr-languages {
+  float: left;
+  margin: 0 15px 0 0;
+} */
+
 .pr-languages .pr-lang span {
   color: #6070ff;
   background-color: #ebebff;
@@ -383,6 +388,7 @@ footer {
   background-color: #6070ff;
   padding: 0 32px;
   padding-top: 120px;
+  padding-bottom: 40px;
   text-align: center;
   color: #ebebff;
   font-weight: 400;
@@ -391,7 +397,6 @@ footer {
   background-image: url(images/footer-background.svg);
   background-repeat: no-repeat;
   background-position: right top;
-  padding-bottom: 40px;
 }
 
 .footer-title {
@@ -453,13 +458,14 @@ textarea {
 .form-button button {
   background: #fff;
   border-radius: 8px;
-  color: #6010ff;
+  color: #6070ff;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   padding: 12px 16px;
   text-align: center;
   letter-spacing: 0.03em;
+  border: 1px solid #6070ff;
 }
 
 .form-button button:hover {
@@ -475,5 +481,7 @@ textarea {
 
 .form-button button:disabled {
   background-color: #2230d2;
-  color: fff;
+  color: #fff;
 }
+
+/* END OF FORM SECTION */
