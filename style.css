@@ -128,6 +128,7 @@ ul li {
 
 /* END OF ID SECTION */
 
+/* MEDIA SECTION */
 @media only screen and (min-width: 600px) {
   .menu {
     display: none;
@@ -144,6 +145,8 @@ ul li {
     background-size: cover;
   }
 }
+
+/* END OF MEDIA SECTION */
 
 /* PORTFOLIO SECTION */
 #work-section {
@@ -385,7 +388,8 @@ footer {
 }
 
 .footer-container {
-  background-color: #6070ff;
+  background: url(images/footer-background.svg) #6070ff no-repeat;
+  background-position: 160px 20px;
   padding: 0 32px;
   padding-top: 120px;
   padding-bottom: 40px;
@@ -394,9 +398,6 @@ footer {
   font-weight: 400;
   line-height: 28px;
   border-top-left-radius: 100px;
-  background-image: url(images/footer-background.svg);
-  background-repeat: no-repeat;
-  background-position: right top;
 }
 
 .footer-title {
