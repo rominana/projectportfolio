@@ -57,9 +57,9 @@ header#header {
   display: flex;
 }
 
-.logo a {
+.logo {
   color: #6070ff;
-  font-size: 24px;
+  font-size: 30px;
   font-family: 'poppins', sans-serif;
   font-weight: bold;
   letter-spacing: 1.2px;
@@ -78,7 +78,7 @@ header#header {
   color: #344563;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .menu {
@@ -496,21 +496,67 @@ textarea {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 120px;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: unset;
   }
 
   .main-content .title {
     font-size: 40px;
     font-weight: 700;
     max-width: 100%;
+    line-height: 80px;
     line-height: 50px;
+    padding-bottom: 25px;
   }
 
   .main-content .main-description {
-    max-width: 100%;
+    max-width: 90%;
     font-size: 20px;
     font-weight: 400;
+    line-height: 28px;
+    padding-bottom: 15px;
   }
 
+  /* CARD SECTION */
+
+  .card {
+    min-width: 80%;
+    align-items: unset;
+    display: block;
+    margin: 0 auto 150px auto;
+  }
+
+  .card .card-picture {
+    border-radius: 50px;
+  }
+
+  .card:nth-child(even) .card-picture {
+    width: 50%;
+    float: right;
+    padding: 2%;
+  }
+
+  .card:nth-child(odd) .card-picture {
+    width: 50%;
+    float: left;
+    padding: 2%;
+  }
+
+  .card-content {
+    width: 50%;
+    height: 600px;
+    padding: 80px 80px;
+  }
+
+  .card-content .card-title {
+    max-width: unset;
+    font-weight: 800;
+    font-size: 35px;
+  }
+
+  /* ABOUT ME SECTION */
   #about-me {
     float: left;
     width: 50%;
@@ -535,7 +581,6 @@ textarea {
     display: block;
     width: 122px;
     height: 120px;
-    vertical-align: center;
     padding-top: 15px;
   }
 
