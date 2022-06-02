@@ -516,17 +516,17 @@ textarea {
   }
 
   .main-content .title {
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     max-width: 100%;
     line-height: 80px;
-    line-height: 50px;
+    line-height: 60px;
     padding-bottom: 25px;
   }
 
   .main-content .main-description {
-    max-width: 90%;
-    font-size: 20px;
+    max-width: 75%;
+    font-size: 22.5px;
     font-weight: 400;
     line-height: 28px;
     padding-bottom: 15px;
@@ -561,6 +561,7 @@ textarea {
     width: 50%;
     height: 650px;
     padding: 80px 80px;
+    font-size: 16px;
   }
 
   .card-content .card-title {
