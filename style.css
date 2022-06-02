@@ -57,11 +57,11 @@ header#header {
   display: flex;
 }
 
-.logo {
+#logo {
   color: #6070ff;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 700;
   font-family: 'poppins', sans-serif;
-  font-weight: bold;
   letter-spacing: 1.2px;
 }
 
@@ -127,10 +127,16 @@ header#header {
   padding-top: 20px;
 }
 
+.social-network ul {
+  display: flex;
+  gap: 15px;
+}
+
 ul li {
   list-style: none;
   box-sizing: unset;
   display: inline;
+  gap: 15px;
 }
 
 /* END OF ID SECTION */
@@ -159,6 +165,7 @@ ul li {
   align-items: center;
   margin-left: 30px;
   margin-right: 30px;
+
 }
 
 .card-picture {
@@ -444,6 +451,8 @@ textarea {
   line-height: 24px;
 }
 
+/* BOTONES */
+
 .form-button button {
   background: #fff;
   border-radius: 8px;
@@ -457,30 +466,36 @@ textarea {
   border: 1px solid #6070ff;
 }
 
-.form-button button:hover {
+.project-button button:hover,
+.form-button button:hover,
+.project-button .btn:hover {
+  transform: scale(0.9);
   background-color: #6070ff;
+  border: 1px solid #6070ff;
   color: #fff;
   font-weight: 300;
   transition-duration: 0.5s;
 }
 
-.form-button button:active {
-  transform: scale(0.9);
-}
-
-.form-button button:disabled {
+.project-button button:active,
+.form-button button:active,
+.project-button .btn:active {
   background-color: #2230d2;
+  border: 1px solid #2230d2;
   color: #fff;
 }
+
+/* END OF BOTONES */
 
 /* END OF FORM SECTION */
 
 /* MEDIA SECTION */
 @media only screen and (min-width: 768px) {
+
   .background-main {
     background: url(images/header-background-desktop.svg) #fff no-repeat;
-    background-size: 100%;
-    background-position: 0 90px;
+    background-size: contain;
+    background-position: top center;
   }
 
   .nav-content .nav-item {
@@ -546,7 +561,7 @@ textarea {
 
   .card-content {
     width: 50%;
-    height: 600px;
+    height: 650px;
     padding: 80px 80px;
   }
 
