@@ -27,7 +27,6 @@ html body {
   background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-color: #fff;
-  /* background-size: cover; */
   background-position: unset;
 }
 
@@ -92,7 +91,7 @@ header {
   justify-content: space-between;
   height: 430px;
   flex-direction: column;
-  margin-top: -100px
+  margin-top: -100px;
 }
 
 .main-content .title {
@@ -570,7 +569,6 @@ textarea {
 
   .card-content {
     width: 50%;
-   /* height: 650px; */
     padding: 80px 80px;
     font-size: 16px;
   }
