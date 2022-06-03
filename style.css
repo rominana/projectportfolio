@@ -1,7 +1,4 @@
-/* Import font family */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap");
-
-/* PRIMER PROYECTO */
 
 * {
   padding: 0;
@@ -12,6 +9,10 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: #e5e5e5;
+}
+
+html body {
+  overflow-x: hidden;
 }
 
 .background {
@@ -26,8 +27,8 @@ body {
   background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-color: #fff;
-  background-size: cover;
-  background-position: 0 80px;
+  /* background-size: cover; */
+  background-position: unset;
 }
 
 .contenedor {
@@ -36,18 +37,16 @@ body {
   max-width: 100%;
 }
 
-header#header {
-  padding: 0 60px;
+header {
   background-color: #fff;
 }
 
 #header .contenedor {
   justify-content: space-between;
   display: flex;
-  margin: 0 auto;
-  padding: 15px 0;
-  max-width: 100%;
-  background-color: #fff;
+  padding: 15px 30px;
+  width: 375px;
+  margin: auto;
 }
 
 /* ELEMENTOS DE LA BARRA DE NAVEGACION */
@@ -67,9 +66,8 @@ header#header {
 
 .nav-content .nav-items {
   display: flex;
-  gap: 15px;
+  gap: 40px;
   justify-content: space-between;
-  width: 300px;
 }
 
 .nav-items .nav-item {
@@ -79,10 +77,6 @@ header#header {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
-}
-
-.menu {
-  display: block;
 }
 
 /* ID SECTION */
@@ -98,12 +92,13 @@ header#header {
   justify-content: space-between;
   height: 430px;
   flex-direction: column;
+  margin-top: -100px
 }
 
 .main-content .title {
   color: #172b4d;
   font-weight: 700;
-  font-size: 43px;
+  font-size: 39px;
   max-width: 319px;
 }
 
@@ -169,6 +164,10 @@ ul li {
 
 .card-picture {
   border-radius: 8px;
+  width: 100%;
+}
+
+.card-picture img {
   width: 100%;
 }
 
@@ -496,7 +495,18 @@ textarea {
     background-position: top center;
   }
 
-  .nav-content .nav-item {
+  #nav {
+    position: absolute;
+    right: 100px;
+    display: block;
+  }
+
+  #logo {
+    position: absolute;
+    left: 100px;
+  }
+
+  .nav-items .nav-item {
     display: block;
   }
 
@@ -539,6 +549,7 @@ textarea {
     align-items: unset;
     display: block;
     margin: 0 auto 150px auto;
+    overflow: auto;
   }
 
   .card .card-picture {
@@ -559,7 +570,7 @@ textarea {
 
   .card-content {
     width: 50%;
-    height: 650px;
+   /* height: 650px; */
     padding: 80px 80px;
     font-size: 16px;
   }
