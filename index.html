@@ -9,12 +9,17 @@
 </head>
 
 <body>
-  <div class="background"></div> <!--Background del proyecto-->
+  <div class="background">
+    <div class="back-left">
+      <div class="back-center">
+      </div>
+    </div>
+  </div> <!--Background del proyecto-->
 
   <!--HEADER SECTION-->
   <header id="header">
       <div class="contenedor">
-        <div id="logo"><a href="romina">Romina</a></div>
+        <div id="logo">Romina</div>
     <!--navigation bar-->
           <nav id="nav">
           <div class="nav-content">
@@ -33,10 +38,10 @@
 
 
     <!--ID SECTION--> 
-    <main id="main">
+    <main id="main" class="background-main">
       <div class="contenedor">
         <article class="main-content">
-          <h1 class="title">I'm Romina<br>Glad to see you!<br></h1>
+          <h1 class="title">I'm Romina <br>Glad to see you!<br></h1>
           <p class="main-description">
             I'm a software developer! I can help you build a product, feature or
             website. Look through some of my work and experience! if you like
@@ -45,7 +50,7 @@
           </p>
           <p class="connect">LET'S CONNECT</p>
             <div class="social-network">
-              <ul>
+              <ul class="icon-transition">
                 <li class="twitter"><img src="images/twitter-logo.svg" alt="twitter" /></li>
                 <li class="linkedin"><img src="images/Linkedin.svg" alt="linkedin"/></li>
                 <li class="github"><img src="images/github.svg" alt="github"/></li>
@@ -68,7 +73,7 @@
    <div class="work-content">
           <!--work nº 1-->
       <div class="card">
-        <img class="card-picture" src="/images/picture1.PNG" alt="work-example"/>
+        <img class="card-picture" src="/images/desktop-card-1.png" alt="work-example"/>
             <div class="card-content">
                 <h2 class="card-title">Tonic</h2>
                     <div class="card-info">
@@ -93,19 +98,20 @@
           <!--end of work nº 1-->
                 <!--work nº 2-->
                 <div class="card">
-                  <img class="card-picture" src="/images/picture2.PNG" alt="work-example"/>
+                  <img class="card-picture" src="/images/picture4.PNG" alt="work-example"/>
                       <div class="card-content">
                           <h2 class="card-title">Multi-Post Stories</h2>
                               <div class="card-info">
-                                <span>CANOPY</span>
+                                <span>FACEBOOK</span>
                                 <span class="punto"></span>
-                                <span>Back End Dev</span>
+                                <span>Fulls Stack Dev</span>
                                 <span class="punto"></span>
                                 <span>2015</span>
                               </div>
-                                <p class="card-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                                <p class="card-description"> Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
                               <div class="pr-languages">
                                   <div class="pr-lang"><span>html</span></div>
+                                  <div class="pr-lang"><span>Ruby on Rails</span></div>
                                   <div class="pr-lang"><span>css</span></div>
                                   <div class="pr-lang"><span>javaScript</span></div>
                               </div>    
@@ -117,17 +123,17 @@
           <!--end of work nº 2-->
                 <!--work nº 3-->
                 <div class="card">
-                  <img class="card-picture" src="/images/picture3.PNG" alt="work-example"/>
+                  <img class="card-picture" src="/images/picture1.PNG" alt="work-example"/>
                       <div class="card-content">
                           <h2 class="card-title">Facebook 360</h2>
                               <div class="card-info">
-                                <span>CANOPY</span>
+                                <span>FACEBOOK</span>
                                 <span class="punto"></span>
-                                <span>Back End Dev</span>
+                                <span>FUll Stack Dev</span>
                                 <span class="punto"></span>
                                 <span>2015</span>
                               </div>
-                                <p class="card-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                                <p class="card-description"> Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
                               <div class="pr-languages">
                                   <div class="pr-lang"><span>html</span></div>
                                   <div class="pr-lang"><span>css</span></div>
@@ -142,19 +148,20 @@
           <!--end of work nº 3-->
                 <!--work nº 4-->
                 <div class="card">
-                  <img class="card-picture" src="/images/picture4.PNG" alt="work-example"/>
+                  <img class="card-picture" src="/images/picture2.PNG" alt="work-example"/>
                       <div class="card-content">
                           <h2 class="card-title">Uber Navigation</h2>
                               <div class="card-info">
-                                <span>CANOPY</span>
+                                <span>Uber</span>
                                 <span class="punto"></span>
-                                <span>Back End Dev</span>
+                                <span>Lead Developer</span>
                                 <span class="punto"></span>
-                                <span>2015</span>
+                                <span>2018</span>
                               </div>
-                                <p class="card-description"> A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                                <p class="card-description"> A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
                               <div class="pr-languages">
                                   <div class="pr-lang"><span>html</span></div>
+                                  <div class="pr-lang"><span>Ruby on Rails</span></div>
                                   <div class="pr-lang"><span>css</span></div>
                                   <div class="pr-lang"><span>javaScript</span></div>
                         </div>    
@@ -232,14 +239,15 @@
   </details>
 </div>
 </div>
-
+<div class="clear_fix">
+</div>
 <!--FORM-->
 <footer>
   <div class="footer-container">
   <h2 class="footer-title">Contact me</h2>
   <p class="footer-info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
   <form action="https://formspree.io/f/xyyooobp" method="POST">
-    <ul>
+    <ul id="ul-form">
       <li>
         <label for="name"></label>
         <input type="text" id="name" name="user_name" placeholder="Romina" maxlength="30" required>
