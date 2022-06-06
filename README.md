@@ -32,4 +32,4 @@ https://rominana.github.io/projectportfolio/
 Feel free to check the issues page!
 
 #### License
-This project is MIT licence
+This project is MIT licence. 
