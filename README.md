@@ -1,7 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Student Project 1 - Figma Porfolio Clone
+# Microverse Student Project 1 - Porfolio 
 > First Microverse student project. Figma Portfolio clone
+This project is a personal portfolio, guided by a figma design.
 
 ## Built With
 
@@ -9,11 +10,14 @@
 - Css
 - Formspree
 
+## Github Page
+
+https://rominana.github.io/projectportfolio/
+
 #### Prerequisites
 - Setup Git and Github
 - Install Npm and Linters
 - Download example presets and icons
-- Import font family
 
 #### Authors 
 * @microverse
@@ -25,7 +29,7 @@
 
 ## *Contributions, issues, and feature requests are welcome*!
 
-Feel free to check the issues page
+Feel free to check the issues page!
 
 #### License
-This project is MIT licensed
+This project is MIT licence
