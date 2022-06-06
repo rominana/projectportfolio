@@ -222,11 +222,6 @@ ul li {
   gap: 15px;
 }
 
-/* .pr-languages {
-  float: left;
-  margin: 0 15px 0 0;
-} */
-
 .pr-languages .pr-lang span {
   color: #6070ff;
   background-color: #ebebff;
