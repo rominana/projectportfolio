@@ -24,13 +24,17 @@
     <!--navigation bar-->
           <nav id="nav">
           <div class="nav-content">
+            <button id="menu-btn" type="button">
+              <img class="menu" id="hamburguer" src="images/menu.svg" alt="menu"/>
+            </button>
+            <img src="images/equis.svg" alt="close button" class="equis">
             <ul class="nav-items">
-              <li class="nav-item">Portfolio</li>
-              <li class="nav-item">About me</li>
-              <li class="nav-item">Contact</li>
+              <li class="nav-item" onclick="Hide()"><a href="#work-section">Portfolio</a></li>
+              <li class="nav-item"><a href="#about-me">About</a></li>
+              <li class="nav-item"><a href="#contact-me">Contact</a></li>
             </ul>
           </div>
-          <img class="menu" src="images/menu.svg" alt="menu"/>
+        <!--ACA IBA LA IMAGEN DEL MENU-->
         </nav>
     <!--end of navigation bar-->
       </div>
@@ -243,7 +247,7 @@
 <div class="clear_fix">
 </div>
 <!--FORM-->
-<footer>
+<footer id="contact-me">
   <div class="footer-container">
   <h2 class="footer-title">Contact me</h2>
   <p class="footer-info">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
@@ -268,7 +272,7 @@
   </form>
 </div>
 </footer>
-
 <!--END OF FORM -->
+<script src="script.js"></script>
 </body>
 </html>

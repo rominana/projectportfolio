@@ -53,6 +53,7 @@ header {
   justify-content: space-between;
   align-items: center;
   display: flex;
+  flex-wrap: wrap; /* MENU JAVASCRIPT */
 }
 
 #logo {
@@ -61,6 +62,16 @@ header {
   font-weight: 700;
   font-family: 'poppins', sans-serif;
   letter-spacing: 1.2px;
+}
+
+/* MENU JAVASCRIPT */
+#menu-btn {
+  border: transparent;
+}
+
+.nav-items {
+  display: block;
+  width: 100%;
 }
 
 .nav-content .nav-items {
@@ -77,6 +88,13 @@ header {
   font-weight: 500;
   font-size: 16px;
 }
+
+.nav-item a {
+  text-decoration: none;
+  color: #344563;
+}
+
+/* MENU JAVASCRIPT */
 
 /* ID SECTION */
 #main {
@@ -286,7 +304,7 @@ ul li {
   color: #4c5ace;
   background-color: transparent;
   border: 1px solid #4c5ace;
-  font-size: 17;
+  font-size: 17px;
   padding: 12px;
   margin-top: 12px;
   font-weight: 500;
@@ -628,6 +646,57 @@ textarea {
 
   input textarea {
     width: 400px;
+  }
+}
+
+/* MQ para mobile js */
+@media only screen and (max-width: 768px) {
+  #main.display-menu {
+    filter: blur(12px);
+  }
+
+  #logo.display-menu {
+    filter: blur(12px);
+  }
+
+  .nav-content.display-menu {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 12;
+    background: url(images/blur-bckg.svg);
+    mix-blend-mode: multiply;
+  }
+
+  #hamburguer.display-menu {
+    display: none;
+  }
+
+  .nav-content .nav-items.display-menu {
+    display: block;
+    padding-top: 28px;
+  }
+
+  .nav-items .nav-item.display-menu {
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #fff;
+    padding-top: 15px;
+    padding-left: 28px;
+  }
+
+  .nav-item a {
+    color: #fff;
+  }
+
+  .equis.display-menu {
+    position: absolute;
+    right: 38px;
+    top: 34px;
   }
 }
 
