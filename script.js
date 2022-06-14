@@ -16,7 +16,7 @@ hamburgerButton.addEventListener('click', () => {
 
 const closeButton = document.getElementsByClassName('equis')[0];
 
-closeButton.addEventListener('click', () => {
+function closeMenu() {
   document.getElementById('main').classList.remove('display-menu');
   document.getElementById('logo').classList.remove('display-menu');
   document.getElementById('hamburguer').classList.remove('display-menu');
@@ -27,4 +27,16 @@ closeButton.addEventListener('click', () => {
   for (let i = 0; i < document.getElementsByClassName('nav-item').length; i++) {
     document.getElementsByClassName('nav-item')[i].classList.remove('display-menu');
   }
+}
+
+closeButton.addEventListener('click', () => {
+  closeMenu();
 });
+
+const closeMenuElements = document.getElementsByClassName('nav-item');
+
+for (let i = 0; i < closeMenuElements.length; i++) {
+  closeMenuElements[i].addEventListener('click', () => {
+    closeMenu();
+  });
+}

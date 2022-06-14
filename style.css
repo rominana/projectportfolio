@@ -650,7 +650,7 @@ textarea {
 }
 
 /* MQ para mobile js */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   #main.display-menu {
     filter: blur(12px);
   }
@@ -664,7 +664,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 12;
     background: url(images/blur-bckg.svg);
     mix-blend-mode: multiply;
