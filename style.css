@@ -714,9 +714,22 @@ textarea {
     font-size: 20px;
   }
 
+  #pop-up .card-content .card-title {
+    margin-left: 30px;
+  }
+
+  #pop-up .card-content .card-info {
+    margin-left: 30px;
+  }
+
   #pop-up-left-column {
     float: left;
     width: 60%;
+    margin-right: 60px;
+  }
+
+  #pop-up-left-column .card-description {
+    margin-left: 30px;
   }
 
   #pop-up-rigth-column {
@@ -724,9 +737,10 @@ textarea {
     width: 40%;
   }
 
-  .pop-up-buttons {
+  #pop-up .pop-up-buttons {
     display: flex;
     gap: 10px;
+    margin-top: 30px;
   }
 
   #pop-up .pr-languages {
