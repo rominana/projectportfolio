@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #e5e5e5;
 }
 
@@ -19,7 +19,7 @@ html body {
   width: 100%;
   height: 718px;
   position: absolute;
-  border-radius: 0 0 0 100px;/* ROUND BOTTOM LEFT CORNER of the background */
+  border-radius: 0 0 0 100px; /* ROUND BOTTOM LEFT CORNER of the background */
   z-index: -11;
 }
 
@@ -60,7 +60,7 @@ header {
   color: #4c5ace;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   letter-spacing: 1.2px;
 }
 
@@ -84,7 +84,7 @@ header {
   display: none;
   list-style: none;
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
@@ -195,7 +195,7 @@ ul li {
 }
 
 .card-content .card-title {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-weight: 700;
   font-size: 28px;
   color: #172b4d;
@@ -245,7 +245,7 @@ ul li {
   background-color: #ebebff;
   border-radius: 7px;
   font-size: 12px;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   padding: 4px 10px 4px 10px;
 }
 
@@ -430,7 +430,7 @@ form #ul-form {
 
 #name::placeholder,
 #mail::placeholder {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   color: #172b4d;
   font-style: normal;
   font-weight: 400;
@@ -454,7 +454,7 @@ textarea {
 }
 
 #msg {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   color: #6d7279;
   font-weight: 400;
   font-size: 15px;
@@ -499,7 +499,16 @@ textarea {
 
 /* END OF FORM SECTION */
 
+/* POP UP SECTION */
+#pop-up {
+  display: none;
+}
+
+/* END POP UP SECTION */
+
 /* MEDIA SECTION */
+
+/* Desktop version */
 @media only screen and (min-width: 768px) {
   .background-main {
     background: url(images/header-background-desktop.svg) #fff no-repeat;
@@ -647,10 +656,101 @@ textarea {
   input textarea {
     width: 400px;
   }
+
+  /* POP UP DESKTOP VERSION */
+  #pop-up .card {
+    max-width: 80%;
+  }
+
+  #pop-up .card-title {
+    font-size: 40px;
+    color: #091e42;
+  }
+
+  #pop-up .card-info span {
+    font-size: 15px;
+  }
+
+  #pop-up .card-picture {
+    width: 100%;
+  }
+
+  #pop-up .card-content {
+    width: 100%;
+    padding: unset;
+    font-size: 16px;
+    gap: unset;
+  }
+
+  #pop-up.pop-up {
+    position: fixed;
+    padding-top: 12%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+  }
+
+  .work-content.pop-up {
+    filter: blur(5px);
+    background-color: #c1c7d0;
+  }
+
+  body.pop-up {
+    overflow-y: hidden;
+  }
+
+  #pop-up {
+    overflow-y: scroll;
+  }
+
+  #pop-up i.close-pop-up {
+    position: absolute;
+    right: 15%;
+    top: 26%;
+    color: #67798e;
+    mix-blend-mode: multiply;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #pop-up .card-content .card-title {
+    margin-left: 30px;
+  }
+
+  #pop-up .card-content .card-info {
+    margin-left: 30px;
+  }
+
+  #pop-up-left-column {
+    float: left;
+    width: 60%;
+    margin-right: 60px;
+  }
+
+  #pop-up-left-column .card-description {
+    margin-left: 30px;
+  }
+
+  #pop-up-rigth-column {
+    float: right;
+    width: 40%;
+  }
+
+  #pop-up .pop-up-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  #pop-up .pr-languages {
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
 }
 
 /* MQ para mobile js */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #main.display-menu {
     filter: blur(12px);
   }
@@ -697,6 +797,50 @@ textarea {
     position: absolute;
     right: 38px;
     top: 34px;
+  }
+
+  /* POP UP SECTION */
+
+  #pop-up.pop-up {
+    position: fixed;
+    padding-top: 12%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+  }
+
+  .work-content.pop-up {
+    filter: blur(2px);
+    background-color: #c1c7d0;
+  }
+
+  body.pop-up {
+    overflow-y: hidden;
+  }
+
+  #pop-up {
+    overflow-y: scroll;
+  }
+
+  #pop-up i.close-pop-up {
+    position: absolute;
+    right: 15%;
+    top: 9%;
+    color: #67798e;
+    mix-blend-mode: multiply;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .pop-up-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  #pop-up .pr-languages {
+    flex-wrap: wrap;
+    margin: 15px 0;
   }
 }
 
