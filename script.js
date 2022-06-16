@@ -187,3 +187,13 @@ function showPopUp(cardNumber) {
     closePopUp();
   });
 }
+
+/* FORM VALIDATION */
+
+document.getElementById('form-submit-button').addEventListener('click', (event) => {
+  const email = document.getElementById('mail');
+  if (email.checkValidity(/[A-Z]/.test(email))) {
+    event.preventDefault();
+    email.setCustomValidity('Email must be on lowercase.');
+  }
+});
