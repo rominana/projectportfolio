@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Student Project 1 - Porfolio 
-> First Microverse student project. Figma Portfolio clone
+# Microverse Student Project - Porfolio 
+>  Microverse student project. Project Portfolio
 This project is a personal portfolio, guided by a figma design.
 
 ## Built With

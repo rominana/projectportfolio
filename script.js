@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-plusplus */
 const hamburgerButton = document.getElementById('menu-btn');
 
@@ -196,4 +197,4 @@ document.getElementById('form-submit-button').addEventListener('click', (event) 
     event.preventDefault();
     email.setCustomValidity('Email must be on lowercase.');
   }
-});
+}); 
