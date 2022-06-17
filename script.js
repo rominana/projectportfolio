@@ -199,7 +199,7 @@ document.getElementById('form-submit-button').addEventListener('click', (event) 
   }
 });
 
-/* preserve data in the browser */
+// /* PRESERVE DATA IN THE BROWSER*/
 
 function getFormData() {
   const formData = {
@@ -215,3 +215,29 @@ function getFormData() {
   const retrieveFormData = localStorage.getItem('formData');
   console.log(JSON.parse(retrieveFormData));
 }
+
+document.getElementById('name').addEventListener('change', () => {
+  getFormData();
+});
+document.getElementById('mail').addEventListener('change', () => {
+  getFormData();
+});
+document.getElementById('msg').addEventListener('change', () => {
+  getFormData();
+});
+
+function loadLocalStorageData() {
+  if (localStorage.getItem('formData') !== null) {
+    // console.log('Content exists');
+    const retrieveFormData = localStorage.getItem('formData');
+    const retrieveJsonData = JSON.parse(retrieveFormData);
+    document.getElementById('name').value = retrieveJsonData.name;
+    document.getElementById('mail').value = retrieveJsonData.email;
+    document.getElementById('msg').value = retrieveJsonData.message;
+  }
+}
+
+window.onload = () => {
+  loadLocalStorageData();
+  // console.log('El dom esta cargado');
+};
