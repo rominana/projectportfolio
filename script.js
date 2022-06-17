@@ -198,3 +198,20 @@ document.getElementById('form-submit-button').addEventListener('click', (event) 
     email.setCustomValidity('Email must be on lowercase.');
   }
 });
+
+/* preserve data in the browser */
+
+function getFormData() {
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('mail').value,
+    message: document.getElementById('msg').value,
+  };
+
+  // // Put the object into storage
+  localStorage.setItem('formData', JSON.stringify(formData));
+
+  // // Retrieve the object from storage
+  const retrieveFormData = localStorage.getItem('formData');
+  console.log(JSON.parse(retrieveFormData));
+}
